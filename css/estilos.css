@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.block-menu{
+    display: block;
+    background: #0099ea;
+    text-align: center;
+}
+
+.block-menu li{
+    display: inline-block;
+}
+
+.block-menu li a{
+    padding: 15px 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-smoothing: antialiased;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 22px;
+    overflow: visible;
+}
+
+
+.three-d{
+    perspective: 200px;
+    transition: all .7s linear;
+    position: relative;
+    cursor: pointer;
+}
+
+.three-d:hover .three-d-box,
+.three-d:focus .three-d-box{
+    transform:  translateZ(-25px) rotateX(90deg);
+}
+
+.three-d-box{
+    transition: all .3s ease-out;
+    transform: translateZ(-22px);
+    transform-style: preserve-3d;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.front{
+    transform: rotateX(0deg) translateZ(25px);
+    background: #0099ea;
+    color: white;
+    font-weight: 100;
+}
+
+.back{
+    transform: rotateX(-90deg) translateZ(25px);
+    background: #0099ea;
+    font-weight: bold;
+    color: #fa5675;
+}
+
+.front,
+.back{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 10px;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
